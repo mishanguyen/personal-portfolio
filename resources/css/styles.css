@@ -148,7 +148,7 @@ h1 {
     text-transform: uppercase;
 }
 .home {
-    background-image: url("/Users/mishanguyen/Codeacademy Projects Front-End/personal portfolio/resources/photos/v748-toon-103.jpg");
+    background-image: url("./resources/photos/v748-toon-103.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
