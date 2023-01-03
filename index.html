@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Misha Nguyen's Personal Website</title>
+        <link href="./resources/css/styles.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header class="header">
+            <div class="main-logo-container">
+                <div class="logo">
+                    <img src="./resources/photos/1635741107967.jpeg"/>
+                </div>
+                <span class="name">Misha Nguyen</span>
+            </div>
+            <div class="nav">
+                <ul class="nav-links">
+                    <li class="nav-links-wrapper">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-links-wrapper">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-links-wrapper">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-links-wrapper">
+                        <a href="#contact" class="nav-link">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger-menu">
+                <!-- <div class="hamburger-menu-btn">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg" alt="hamburger menu" class="open">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="close">
+                </div> -->
+                <ul class="ham-menu-links">
+                    <li class="ham-menu-link link-1">
+                        <a href="#">Home</a>
+                    </li>
+        
+                    <li class="ham-menu-link">
+                        <a href="#about">About</a>
+                    </li>
+        
+                    <li class="ham-menu-link">
+                        <a href="#projects">Projects</a>
+                    </li>
+        
+                    <li class="ham-menu-link">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button class="hamburger">
+                    <!-- material icons https://material.io/resources/icons/ -->
+                    <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg" alt="hamburger menu" class="open">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="close">
+                </button>
+            </div>
+        </header>
+        <section class="home">
+            <div class="home-content-container">
+                <h1>Hey!</h1>
+                <h1>My name is Misha Nguyen.</h1>
+                <div class="home-info">
+                    <p class="text-home">Computer Science Student at the University of South Florida</p>
+                    <p class="text-home">Aspring Software Engineer | Looking for Summer 2023 Internships</p>
+                </div>
+                <div class="button">
+                    <a href="https://drive.google.com/file/d/1kcn6BH1cQJ0lvRG6xKiDvOOwSjWod9dh/view?usp=sharing" target="_blank" class="btn-resume">See Resume</a>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-info">
+                <h2>About Me</h2>
+                <div class="about-me">
+                    <h3>Who I am</h3>
+                    <p>I am a second-year Computer Science student at the University of South Florida from Russia. In my coursework, I have gained knowledge of C/C++ and Python. I have also self-learned about HTML, CSS, and JavaScript to expose myself to Front-End Development. I completed CodePath iOS Development certification for which I completed a few projects in Swift and learned about RESTFul API.</p>
+                    <p>My work experience includes tutoring Mathematics to students at USF, which resulted in improving their test scores of them and refining my soft skills, such as teamwork and problem solving. I have also demonstrated leadership skills as Student Body President by coordinating extracurricular activities for a community of over 2,000 students and representing their interests to the school administration.</p>
+                    <p>As an international student, I am looking for any opportunities to gain any valuable experience related to the field of technology, particularly Software Engineering.</p>
+                    <p>I hope you were able to learn a bit about who I am and what I can do!</p>
+                </div>
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Swift</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="projects-info">
+                <h2>My Projects</h2>
+                <div class="project-1">
+                    <h3>Tourist Attractions Organizer</h3>
+                    <p>This web application is built using Python and its Flask microframework. It allows the user to add/remove tourist locations and put it in one of the three categories. Flask WTForms and Jinja2 Templates were also utilized to get the information from the user.</p>
+                    <img src="./resources/photos/Screenshot 2022-12-29 at 12.06.15 AM.png" alt="tourist attractions description" />
+                </div>
+                <div class="project-2">
+                    <h3>Twitter</h3>
+                    <p>Used Twitter API to implement an imitation of the Twitter App in Swift. The user can log in/out, like tweets, post tweets, and retweet.</p>
+                    <img src="./resources/photos/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4737764739507a5758377a67624b485476572f67697068792e676966.gif" alt="video gif of the Twitter App implementation." />
+                </div>
+                <div class="project-3">
+                    <h3>Personal Website</h3>
+                    <p>Created a personal website using HTML & CSS.</p>
+                    <img src="./resources/photos/Screenshot 2022-12-30 at 1.19.22 PM.png" alt="personal website photo"/>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-me">
+                <h2>Contact Me</h2>
+                <p>If you have any questions or would like to get in touch, please feel free to fill out the form below!</p>
+                <form>
+                    <div class="contact-input-container">
+                        <label for="name">Name:</label>
+                        <input type="text" placeholder="Enter Your Name" id="name" name="name" required />
+                    </div>
+                    <div class="contact-input-container">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Enter Your Email" id="email" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+                    </div>
+                    <div class="contact-input-container">
+                        <label for="message">Message:</label>
+                        <textarea id="message" placeholder="Enter Your Message" name="message" rows="10" cols="30" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+              </div>
+        </section>
+        <script src="./index.js"></script>
+    </body>    
+</html>

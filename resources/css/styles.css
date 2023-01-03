@@ -1,0 +1,423 @@
+* {
+    font-family: 'Source Sans Pro',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+.header {
+    margin: 0;
+    padding: 0 2rem;
+    position: fixed;
+    height: 5rem;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 101;
+    box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
+}
+
+.main-logo-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem 1rem;
+    z-index: 102;
+}
+
+.logo img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.name {
+    color:black;
+    font-size: 1.25rem;
+    font-weight: 1000;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+}
+
+.nav {
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    text-align: left;
+    list-style: none;
+}
+
+.nav-links a {
+    padding: 1rem 1rem;
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    color: #F18805;
+}
+
+@media only screen and (min-width: 601px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+/* Hamburger Menu */
+@media only screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .ham-menu-links:first-child {
+        border-top: 1px solid #eee;
+    }
+    .ham-menu-link {
+        display: block;
+        padding: 2rem 4rem;
+        font-size: 1.25rem;
+        color: white;
+        border-bottom: 1px solid #eee;
+    }
+
+    .ham-menu-link a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-size: 1.25rem;
+        font-weight: 700;
+        
+    }
+
+    .ham-menu-link a:hover {
+        opacity: 0.7;
+    }
+
+    .hamburger {
+        padding: 4px;
+        background: white;
+        cursor: pointer;
+        border: none;
+    }
+
+    img.close {
+        display: none;
+    }
+
+    .ham-menu-links {
+        display: none;
+        text-align: right;
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: white;
+        color: black;
+        list-style: none;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
+}
+h1 {
+    font-weight: 700;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+}
+.home {
+    background-image: url("/Users/mishanguyen/Codeacademy Projects Front-End/personal portfolio/resources/photos/v748-toon-103.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 40rem;
+    max-height: 120rem;
+    position: relative;
+}
+.home-content-container {
+    transform: translate(0%,-50%);
+    top: 50%;
+    margin-right: 10%;
+    margin-left: 10%;
+    position: absolute;
+    display: block;
+}
+
+.home-info {
+    margin-top: 2rem;
+}
+p.text-home {
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: block;
+}
+
+.button {
+    margin-top: 3rem;
+}
+
+.btn-resume {
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: #F18805;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 4rem;
+    letter-spacing: 1px;
+    color: black;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-resume:hover {
+    opacity: 0.7;
+}
+
+#about {
+    background-color: white;
+    padding: 6rem 0;
+}
+
+.about-info {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+    position: relative;
+}
+
+.about-info h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.about-me h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-me p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 100%;
+    display: block;
+    max-width: 70rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.skills {
+    position: relative;
+}
+
+.skills h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills li {
+    font-size: 1rem;
+    font-weight: 700;
+    display: block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(153,153,153,.2);
+    padding: 0.625rem 0.625rem;
+    border-radius: 5px;
+    color: #666;
+}
+
+#projects {
+    background-color: #fafafa;
+    padding: 6rem 0;
+}
+
+.projects-info {
+    left: 10%;
+    display: block;
+    position: relative;
+    width: 80%;
+}
+
+.projects-info h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.projects-info div {
+    margin-bottom: 2rem;
+    padding: 2rem 2rem;
+    display: block;
+    border: #666;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.project-1 img {
+    margin-top: 1.25rem;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
+}
+
+.projects-info h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.projects-info p {
+    font-size: 1.25rem;
+}
+
+.project-2 img {
+    margin-top: 1.25rem;
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
+}
+
+.project-3 img {
+    margin-top: 1.25rem;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
+}
+
+#contact {
+    background-color: white;
+    padding: 6rem 0;
+}
+
+.contact-me {
+    
+    margin-left: 10%;
+    margin-right: 30%;
+    display: block;
+    position: relative;
+}
+
+.contact-me h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-me p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+}
+
+.contact-me form {
+    box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+    padding: 2rem 2rem;
+    border-radius: 5px;
+}
+
+.contact-me label {
+    font-size: 1rem;
+    font-weight: bold;
+    color:#666;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.contact-me input, textarea {
+    color: #333;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    font-size: 1rem;
+    letter-spacing: 0;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 600;
+    resize: none;
+}
+
+.contact-me input:focus, textarea {
+    outline: none !important;
+}
+
+
+.contact-me button {
+    width: 10rem;
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid #F18805;
+    background-color: #F18805;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.contact-me button:hover {
+    opacity: 0.7;
+}
+
+.contact-me div {
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 480px){
+    html {
+        font-size: 80%;
+    }
+    .projects-info img {
+        width: 80%;
+        min-height: 70%;
+    }
+
+    .contact-me {
+        margin-right: 10%;
+    }
+
+    #about, #projects, #contact {
+        padding: 3rem 0;
+    }
+}
+
+/* @media only screen and (max-width: 320px) {
+    .home-content-container {
+        top: 20%;
+    }
+} */
+
+  
